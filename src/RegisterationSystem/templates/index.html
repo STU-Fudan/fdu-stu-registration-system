@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load staticfiles %}
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>
@@ -6,10 +7,10 @@
       在线报名-复旦学生网招新
 
     </title>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /><meta name="description" /><link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/apply.css" media="all" />
-    <script src="{{ STATIC_URL }}js/submit.js"></script>
-    <link href="{{ STATIC_URL }}css/app_temp.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /><meta name="description" /><link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/apply.css' %}" media="all" />
+    <script src="{% static 'js/submit.js' %}"></script>
+    <link href="{% static 'css/app_temp.css' %}" rel="stylesheet" type="text/css" />
     <style type="text/css">
         .style1
         {
@@ -17,7 +18,7 @@
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}mobile.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mobile.css' %}" media="all" />
   </head>
   <body>
 
@@ -25,7 +26,7 @@
     <form method="post" action="###"  id="form1" enctype="multipart/form-data">
       {% csrf_token %}
       <div class="logo">
-        <img src="{{ STATIC_URL }}/css/stu_web.png" style="width:100%;height:100%;"></img>
+        <img src="{% static 'css/stu_web.png' %}" style="width:100%;height:100%;"></img>
       </div>
       <p class="title">加入我们</p>
       <div id="content_layout" class="frame_1col">
@@ -65,7 +66,6 @@
           <!-- 原来container_app_temp_content里面的东西塞到这里了，相应的css也加进来了，如有冲突注意调整-->
         </div>
       </div>
-    </div>
     </form>
     <div class="copyright">
       <p>Copyright ©2014 stu.fudan.edu.cn</p>
