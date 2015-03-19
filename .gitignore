@@ -52,4 +52,9 @@ docs/_build/
 
 # PyBuilder
 target/
-src/RegisterationSystem/db.sqlite3
+src/db.sqlite3
+
+#
+*.swp
+*.swo
+*migrations
