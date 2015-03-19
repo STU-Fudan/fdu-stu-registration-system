@@ -23,8 +23,6 @@
   <body>
 
 
-    <form method="post" action="###"  id="form1" enctype="multipart/form-data">
-      {% csrf_token %}
       <div class="logo">
         <img src="{% static 'css/stu_web.png' %}" style="width:100%;height:100%;"></img>
       </div>
@@ -60,13 +58,12 @@
                 <p class="textname">联系电话</p>
               </div>
 
-              <button  class="container_app_temp_button_handin" onclick="submit();">提交</button>
+              <button  class="container_app_temp_button_handin" onclick="submit()">提交</button>
             </div>
           </div>
           <!-- 原来container_app_temp_content里面的东西塞到这里了，相应的css也加进来了，如有冲突注意调整-->
         </div>
       </div>
-    </form>
     <div class="copyright">
       <p>Copyright ©2014 stu.fudan.edu.cn</p>
       <p>All rights reserved.</p>

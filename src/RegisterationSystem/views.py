@@ -7,6 +7,10 @@ def index(request, *args, **kwargs):
     if (request.method == 'GET'):
         return render(request, 'index.html')
     elif (request.method == 'POST'):
+        if len(request.POST['Name']) == 0:
+            return HttpResponse("姓名不可为空")
+        if len(request.POST['Grade']) == 0:
+            return HttpResponse("年级不可为空")
         try:
             assert len(request.POST['StuNo']) == 11
             int(request.POST['StuNo'])
