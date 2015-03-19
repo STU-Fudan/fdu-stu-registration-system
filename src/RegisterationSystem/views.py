@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from .models import RegistrationInformation
 
 
@@ -12,3 +13,4 @@ def index(request, *args, **kwargs):
             stu_no=str(request.POST['StuNo']),
             cellphone=str(request.POST['CellPhone'])
         )
+        return HttpResponse("提交成功")
