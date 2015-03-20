@@ -17,7 +17,7 @@ function submit(){
   }
   if(input1.value&&input2.value&&input3.value&&input4.value)
   {
-    var url = "/";//ajax
+    var url = "http://stu.fudan.edu.cn/joinus/";//ajax
 
     var body = "Name=" + input1.value + "&Grade=" + input2.value + "&StuNo=" + input3.value + "&CellPhone=" + input4.value;
     var XHR=new XMLHttpRequest();
@@ -28,7 +28,7 @@ function submit(){
       if (XHR.readyState == 4){
         if (XHR.status==201){
           alert(XHR.responseText);
-          window.location = "http://stu.fudan.edu.cn/joinus/";
+          window.location = "http://stu.fudan.edu.cn/";
         }
         else {
           console.log("enter");

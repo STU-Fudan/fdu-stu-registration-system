@@ -4,6 +4,7 @@ from .models import RegistrationInformation
 
 
 def index(request, *args, **kwargs):
+    print(request.META['HTTP_HOST'])
     if (request.method == 'GET'):
         return render(request, 'index.html')
     elif (request.method == 'POST'):

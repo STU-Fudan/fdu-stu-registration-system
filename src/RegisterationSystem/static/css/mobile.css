@@ -3,6 +3,7 @@
   margin-top: -40px;
   font-size: 17px;
   color:#b8b8b8;
+  width: 160px;
 }
 .logo{
   width: 50%;
@@ -10,9 +11,14 @@
   margin: 0 auto;
 }
 body {
-
-  background:url("./mobile_bg.jpg");
-
+  background:url("./mobile_bg.jpg") no-repeat;
+  background-size:100% 100%;
+}
+.title{
+  width: 100%;
+}
+html,body{
+  width:100%;
 }
 .title{
   margin-top:20px; 
@@ -22,7 +28,7 @@ body {
 }
 input,input[required]:invalid{
   height: 40px;
-  width:200px;
+  width:inherit;
 }
 input:focus + .textname{
   color:#36169C;
@@ -34,7 +40,7 @@ input:focus + .textname{
 input:focus,input[required]:valid{
     border: 1px #36169C solid;
     height: 40px;
-    width:200px;
+    width:inherit;
     background-color: rgb(236,160,24) ;
   -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,.5) !important;
       -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.5) !important;
@@ -54,37 +60,44 @@ input[required]:valid + .textname{
 }
 
 .inputbox1{
-  width:150px;
+   width:235px;
   height: 40px;
   top:40px;
-  position: absolute;
-}
+  left:0px;
+  position: absolute;}
 .inputbox2{
-  width:150px;
+    width:235px;
   height: 40px;
   top:110px;
-  left: 0px;
-  position: absolute;
-}
+  left:0px;
+  position: absolute;}
+
 .inputbox3{
-  width:150px;
+     width:235px;
   height: 40px;
-  position: absolute;
   top:180px;
-}
+  left:0px;
+  position: absolute;}
 .inputbox4{
-  width:150px;
+   width:235px;
   height: 40px;
-  position: absolute;
-  left: 0px;
   top:250px;
+  left:0px;
+  position: absolute;
+}
+
+.buttonbox{
+  width:259px;
+  height: 40px;
+  top:320px;
+  left:20px;
+  position: absolute;
+  margin-bottom: 40px;
 }
 .container_app_temp_button_handin{
-  width:224px !important;
+  width:100%;
   height: 40px;
-  position: absolute;
-  left:0px;
-  top:320px;
+  position: static;
   border: 1px #d4d4d4 solid;
   -webkit-border-radius:10px;
   border-radius:10px;
@@ -109,78 +122,12 @@ input[required]:valid + .textname{
     box-shadow: 0 2px 0px rgba(0,0,0,.2), inset 0 2px 0px rgba(255,255,255,.7);
 }
 
-  form {
-    overflow: hidden;
-  }
-  #header_layout, .frame_1col_top {
-    display: none;
-  }
+
   .frame_1col {
-    width: 90% !important;
+    width: 300px !important;
     overflow: hidden;
+    height: 400px;
     margin-bottom: 200px;
   }
-  .frame_1col_repeat {
-    padding: 20px 0;
-  }
-  .frame_1col_repeat h2 {
-    display: block !important;
-    padding-left: 20px !important;
-    font-size: 20px !important;
-    height: 40px !important;
-  }
-  .frame_1col_repeat h2:before {
-    content: "「复旦学生网 2014 招新」";
-  }
-  #aboutus_content {
-    height: inherit !important;
-    width: 100% !important;
-    padding-left: 0 !important;
-  }
-  #aboutus_content > div {
-    width: 100% !important;
-    height: inherit !important;
-    padding-left: 20px;
-  }
-  #aboutus_content > div > div:nth-child(1) {
-    width: inherit !important;
-    float: none !important;
-  }
-  #aboutus_content > div > div:nth-child(2) {
-    width: inherit !important;
-    height: inherit !important;
-    float: none !important;
-  }
-  .text_msg {
-    font-size: 13px;
-  }
-  .text_tab {
-    font-size: 18px;
-    margin: 10px 0;
-  }
 
-  #Content_Gender {
-    font-size: 18px;
-  }
-  .text_msg {
-    margin: 20px 0;
-    padding-right: 40px;
-  }
-  textarea {
-    width: 300px !important;
-  }
-  #footer_layout {
-    display: none;
-  }
-  .container_app_temp_buttonbar {
-    margin-left: -20px;
-    text-align: center !important;
-  }
-  #Content_LinkButton1 {
-    float: none !important;
-    display: inline-block !important;
-  }
-  .container_app_temp_buttonbar > a.container_app_temp_button_cancel {
-    display: none !important;
-  }
 }
